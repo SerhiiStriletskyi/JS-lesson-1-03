@@ -6,9 +6,11 @@
 
 // your code
 let sum = 0;
-let counter = 1;
-while (counter <= 20) {
-  sum = sum + counter;
-  counter = counter + 2;
+let i = 1;
+
+while (i <= 20) {
+    if (i % 2 !== 0) {
+        sum += i;
+    }
+    i++;
 }
-console.log(sum);
